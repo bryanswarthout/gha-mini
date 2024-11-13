@@ -6,6 +6,7 @@ const searchOMDB = async (query: string) => {
         import.meta.env.VITE_OMDB_API_KEY
       }`
     );
+    
     console.log('Response:', response);
     const data = await response.json();
     if (!response.ok) {
